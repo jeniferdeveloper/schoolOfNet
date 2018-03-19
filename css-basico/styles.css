@@ -1,0 +1,80 @@
+ /* Reset: Zera o valor padrão do navegador, o exp abaixo passa os elemnetos dentro da largura especificada */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: 'Vibur', cursive;
+    font-size: 50px;
+}
+p {
+    color: green;
+}
+.yellow {
+    color: yellow;
+}
+.blue {
+    color: dodgerblue;
+}
+#red {
+    color: mediumvioletred;
+}
+
+.btn {
+    border-style: solid;
+    border-top-width: 2px;
+    border-bottom-width: 4px;
+    border-left-width: 2px;
+    border-right-width: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn-red {
+    background-color: red;
+    border-color: darkred;
+}
+
+.btn-red:hover {
+    background-color: indianred;
+    border-color: red;
+}
+
+.btn-blue {
+    background-color: dodgerblue;
+    border-color: deepskyblue;
+}
+
+.btn-blue:hover {
+    background-color: lightskyblue;
+    border: 3px solid;
+    border-color: cornflowerblue;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    padding: 0;
+}
+
+form {
+    border: dashed 2px rgb(150, 150, 150);
+    padding: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    border: 1px solid #aaa;
+    padding: 10px;
+}

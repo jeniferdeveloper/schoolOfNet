@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1> Search </h1>
+
+    <!-- Busca e passa o valor procurado  -->
+    <strong> indexOf() </strong>
+
+    <script>
+        var arr1 = ["orange", "blue", "red", "blue", "green"];
+        var ret = arr1.indexOf("blue");
+
+        document.write("<p> Ret: " + ret + " value = " + arr1[ret] + "</p>");
+        console.log("indexOf()");
+        console.log(ret);
+    </script>
+
+    <!-- Busca pelo valor a partir da array declarada  -->
+    <strong> indexOf(searchElement[, fromIndex]) </strong>
+
+    <script>
+        var arr1 = ["orange", "blue", "red", "blue", "green"];
+        var ret = arr1.indexOf("blue", 2);
+
+        document.write("<p> Ret: " + ret + " value = " + arr1[ret] + "</p>");
+        console.log("indexOf()");
+        console.log(ret);
+    </script>
+
+    <!-- Busca pelo array declarado mas inicia a busca pelo final da array  -->
+    <strong> lastIndexOf(searchElement[, fromIndex]) </strong>
+
+    <script>
+        var arr1 = ["orange", "blue", "red", "blue", "green"];
+        var ret = arr1.lastIndexOf("blue");
+
+        document.write("<p> Ret: " + ret + " value = " + arr1[ret] + "</p>");
+        console.log("lastIndexOf");
+        console.log(ret);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+.player {
+    position: relative;
+    /* -webkit-animation-name: animation2;
+    /* Chrome, Safari, Opera */
+    /* animation-name: animation2; */
+    /* -webkit-animation-duration: 4s; */
+    /* Chrome, Safari, Opera */
+    /* animation-duration: 4s; */
+    /* -webkit-animation-direction: alternate; */
+    /* animation-direction: alternate; */
+    /* -webkit-animation-iteration-count: infinite; */
+    /* animation-iteration-count: infinite; */
+}
+
+.player-body {
+    /* width: 0;
+    height: 0;
+    border-right: 70px solid transparent;
+    border-top: 85px solid #39A045;
+    border-left: 80px solid #39A045;
+    border-bottom: 45px solid #39A045;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 185px;
+    border-bottom-left-radius: 110px;
+    border-bottom-right-radius: 110px; */
+
+     width: 0;
+    height: 0;
+
+    -ms-border-right: 61px solid rgba(169, 50, 220, 0);
+    -webkit-border-right: 61px solid rgba(169, 50, 220, 0);
+    border-right: 61px solid rgba(169, 50, 220, 0);
+
+    -webkit-border-top: 92px solid #39A045;
+    -ms-border-top: 92px solid #39A045;
+    border-top: 92px solid #39A045;
+
+    -webkit-border-left: 61px solid #39A045;
+    -ms-border-left: 61px solid #39A045;
+    border-left: 61px solid #39A045;
+
+    -ms-border-bottom: 27px solid #39A045;
+    -webkit-border-bottom: 27px solid #39A045;
+    border-bottom: 27px solid #39A045;
+    
+    -webkit-border-top-right-radius: 50px;
+    -ms-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+
+   
+    -ms-border-top-left-radius: 139px;
+    -webkit-border-top-left-radius: 139px;
+    border-top-left-radius: 139px;
+ /* 
+    -webkit-border-bottom-left-radius: 50px;
+    -ms-border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+ 
+    -ms-border-bottom-right-radius: 50px; 
+    -webkit-border-bottom-right-radius: 50px; 
+    border-bottom-right-radius: 50px;  */
+}
+
+.player-eye {
+    position: absolute;
+    left: 72px;
+    top: 27px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background-color: white;
+    width: 35px;
+    height: 23px;
+    animation: blink 5s linear 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes animation1 {
+    from {
+        -ms-transform: translate(0, 0);
+        /* IE 9 */
+        -webkit-transform: translate(0, 0);
+        /* Safari */
+        transform: translate(0, 0);
+    }
+    to {
+        -ms-transform: translate(500px, 0);
+        /* IE 9 */
+        -webkit-transform: translate(500px, 0);
+        /* Safari */
+        transform: translate(500px, 0);
+    }
+}
+
+@keyframes animation1 {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(500px, 0);
+    }
+}
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes animation2 {
+    0% {
+        -ms-transform: translate(0, 0);
+        /* IE 9 */
+        -webkit-transform: translate(0, 0);
+        /* Safari */
+        transform: translate(0, 0);
+    }
+    25% {
+        -ms-transform: translate(100px, 50px);
+        /* IE 9 */
+        -webkit-transform: translate(100px, 50px);
+        /* Safari */
+        transform: translate(100px, 50px);
+    }
+    50% {
+        -ms-transform: translate(200px, 0);
+        /* IE 9 */
+        -webkit-transform: translate(200px, 0);
+        /* Safari */
+        transform: translate(200px, 0);
+    }
+    100% {
+        -ms-transform: translate(500px, -50px);
+        /* IE 9 */
+        -webkit-transform: translate(500px, -50px);
+        /* Safari */
+        transform: translate(500px, -50px);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 50px);
+    }
+    50% {
+        transform: translate(200px, 0);
+    }
+    100% {
+        transform: translate(500px, -50px);
+    }
+}
+
+@keyframes blink {
+    0% {
+        background-color: white
+    }
+    98% {
+        background-color: white
+    }
+    100% {
+        background-color: #39A045
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <h1> Function </h1>
+
+    <p> Testes: </p>
+    <script>
+        function add(a, b) {
+            return parseInt(a) + parseInt(b);
+        }
+
+        document.write("<p> add(5,4) = " + add(5, 4) + "</p>");
+
+        //  y =1 fac=6
+        //  
+        var factorial = function (n) {
+            var fac = 1;
+            for (var y = n; y >= 1; y--) {
+                fac *= y;
+            }
+            return fac;
+        };
+
+        document.write("<p> factorial(4) = " + factorial(3) + "</p>");
+    </script>
+
+</body>
+
+</html>

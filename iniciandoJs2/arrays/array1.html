@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <h1> Methods of Arrays </h1>
+
+    <!-- Concaterna arrays -->
+    <strong> concat() </strong>
+
+    <script>
+        var arr1 = new Array("red", 10, 20.4);
+        var arr2 = Array("blue", 12, 30.3, arr1);
+        arr1 = arr1.concat(arr2);
+
+        document.write("<p>concat(): " + arr1.length + " </p>");
+        console.log("concat():");
+        console.log(arr1);
+    </script>
+
+    <!-- Pega uma string -->
+    <strong> join() </strong>
+
+    <script>
+        var arr1 = new Array("red", 10, 20.4);
+        var arr2 = Array("blue", 12, 30.3, arr1);
+        arr1 = arr1.concat(arr2);
+        var list = arr1.join(" - ");
+
+        document.write("<p>join(): " + list + " </p>");
+        console.log("join():");
+        console.log(list);
+    </script>
+
+    <!-- Adicionar elementos no final da array -->
+    <strong> push() </strong>
+
+    <script>
+        var arr3 = new Array("red", 10, 20.4);
+        arr3.push("New element");
+        var list = arr3.join(" - ");
+
+        document.write("<p>push(): " + arr3 + " </p>");
+        console.log("push():");
+        console.log(arr3);
+    </script>
+
+    <!-- Remove o úlltimo elemento da array -->
+    <strong> pop() </strong>
+
+    <script>
+        arr3.pop();
+        var list = arr3.join(" - ");
+        document.write("<p>pop(): " + arr3 + " </p>");
+        console.log("pop():");
+        console.log(arr3);
+    </script>
+
+    <!-- Remove o primeiro elemento da array -->
+    <strong> shift() </strong>
+
+    <script>
+        arr3.shift();
+        var list = arr3.join(" - ");
+        document.write("<p>shift(): " + arr3 + " </p>");
+        console.log("shift():");
+        console.log(arr3);
+    </script>
+
+    <!-- Adicionar elementos no inicio da array -->
+    <strong> unshift() </strong>
+
+    <script>
+        var arr1 = new Array("red", 10, 20.4);
+        arr1.unshift("New element");
+        var list = arr1.join(" - ");
+
+        document.write("<p>unshift(): " + arr1 + " </p>");
+        console.log("unshift():");
+        console.log(arr1);
+    </script>
+
+    <!-- Pega uma parte do array de acordo com a posição que vc informar -->
+    <strong> slice() </strong>
+
+    <script>
+        var arr1 = new Array("red", 10, 20.4, "New element");
+        var newArray = arr1.slice(1, 4);
+
+        var list = newArray.join(" - ");
+
+        document.write("<p>slice(): " + newArray + " </p>");
+        console.log("slice():");
+        console.log(newArray);
+    </script>
+
+    <!-- Escolha um indice inicial e um final e ele substitue o array -->
+    <strong> splice() </strong>
+
+    <script>
+        var arr1 = new Array("red", 10, 20.4, "New element");
+        arr1.splice(1, 2, "A", "B", "C", "D");
+
+        var list = arr1.join(" - ");
+
+        document.write("<p>splice(): " + arr1 + " </p>");
+        console.log("splice():");
+        console.log(arr1);
+    </script>
+
+    <!-- Inverte os dados do array -->
+    <strong> reverse() </strong>
+
+    <script>
+        var arr1 = new Array("A", "B", "C", "D");
+        arr1.reverse();
+
+        var list = arr1.join(" - ");
+
+        document.write("<p>reverse(): " + arr1 + " </p>");
+        console.log("reverse():");
+        console.log(arr1);
+    </script>
+
+    <!-- Ordenar os elementos da array (crescente/descrescente) -->
+    <strong> sort(ordem crescente) </strong>
+
+    <script>
+        var arr1 = new Array(5, 3, 4, 2, 0, 1);
+        arr1.sort();
+        var list = arr1.join(" - ");
+
+        document.write("<p>sort(): " + arr1 + " </p>");
+        console.log("sort():");
+        console.log(arr1);
+    </script>
+
+    <!-- Ordenar os elementos da array (crescente/descrescente) -->
+    <strong> sort(ordem decrescente) with callback </strong>
+
+    <script>
+        var arr1 = new Array(5, 3, 4, 2, 0, 1);
+
+        function desc(a, b) {
+            if (a > b) {
+                return -1;
+            }
+            if (a < b) {
+                return 1;
+            }
+            if (a === b) {
+                return 0;
+            }
+        }
+
+        arr1.sort(desc);
+        var list = arr1.join(" - ");
+
+        document.write("<p>sort(): " + arr1 + " </p>");
+        console.log("sort():");
+        console.log(arr1);
+    </script>
+
+</body>
+
+</html>
